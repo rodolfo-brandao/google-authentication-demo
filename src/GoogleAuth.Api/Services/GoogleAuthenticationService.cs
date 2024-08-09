@@ -11,7 +11,7 @@ public class GoogleAuthenticationService : IGoogleAuthenticationService
         {
             var payload = await ValidateAsync(token, new ValidationSettings
             {
-                Audience = ["339086856826-stbl9jcguau8100v421ap0vrkmisvj5n.apps.googleusercontent.com"]
+                Audience = ["<YOUR_CLIENT_ID_HERE>"]
             });
 
             // (optional) If the e-mail used to issue the token is hosted by a specific domain,
